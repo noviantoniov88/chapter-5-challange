@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+html,
+body {
+    background-color: black;
+    width: 100%;
+    overflow-y: visible;
+    overflow-x: hidden;
+    user-select: none;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+#pageone{
+    background-image: url(/assets/image/main-bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#pagetwo{
+    background-image: url(/assets/image/the-games-bg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#pagethree{
+    background-image: url(/assets/image/features.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#pagefour{
+    background-image: url(/assets/image/requirements.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#pagefive{
+    background-image: url(/assets/image/top-score-bg.png);
+    background-color: black;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#pagesix{
+    background-image: url(/assets/image/newsletter.png);
+    background-color: black;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#pagefooter{
+    background-image: url(/assets/image/newsletter.png);
+    background-color: black;
+    width: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#navigasibar {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    /* font-size: 12px; */
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.stretched-text-title {
+    margin:0;
+    letter-spacing: 6px;
+    display: inline-block;
+    font-size: 65px;
+    transform-origin: 0 0;
+}
+
+.stretched-text-child {
+    letter-spacing: 4px;
+    transform-origin: 0 0;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* overflow-block: ; */
+}
+
+.vertical-bottom-story {
+    margin: 0;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+ ul.lines {
+    max-width: 400px;
+    margin: 0 auto;
+    list-style-type: none;
+    counter-reset: steps;
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+   ul li.lines {
+    padding: 0 0 20px 50px;
+    position: relative;
+    margin: 0;
+  }
+  
+  ul li.lines:after {
+    position: absolute;
+    background: url('/assets/image/ellipse-outline.svg') no-repeat left top !important;
+    top: 0px;
+    left: 5px;
+    content: url(/assets/image/ellipse-outline.svg);
+    text-align: center;
+    line-height: 24px;
+    background: #fff;
+  }
+
+  ul li.lines:before {
+    position: absolute;
+    left: 13px;
+    top: 15px;
+    content: "";
+    height: 100%;
+    width: 0;
+    border-left: 2px solid white;
+  }
+
+  ul li.lines:last-of-type:before {
+    border: none;
+  }
