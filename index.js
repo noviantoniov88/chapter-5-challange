@@ -1,6 +1,5 @@
 const express = require('express');
 const fs = require('fs')
-const bodyParser = require('body-parser')
 
 const path = require('path');
 const app = express();
@@ -50,6 +49,23 @@ app.get('/user', (req,res)=>{
         }else{
             res.status(404).send("DATA NOT FOUND");
         }
+    }
+});
+
+app.get('/user/:id', function (req,res){
+    let result 
+    let data = JSON.parse(fs.readFileSync('./userAccount.json', 'utf-8'));
+    // console.log(queryName);
+
+    for(let i=0; i < data.length; i++){
+        if(data[i].id == parseInt(req.params.id)){
+            result = data[i];
+        }
+    }
+    if(result != undefined){
+        res.send(result);
+    }else{
+        res.status(404).send("DATA NOT FOUND");
     }
 });
 
