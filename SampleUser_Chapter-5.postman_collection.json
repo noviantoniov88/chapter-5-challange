@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "f1137570-4f98-43de-9645-ffa226db08c6",
+		"name": "Chapter-5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "viewUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "viewAllUser",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "722"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2d2-VyzTZHbB+iMnjChLPSYRnaMnW9s\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Aug 2022 04:48:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Toni\",\n        \"email\": \"toni@gmail.com\",\n        \"password\": \"e10adc3949ba59abbe56e057f20f883e\",\n        \"alamat\": \"Ciputat\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Sugeng\",\n        \"email\": \"sugeng@gmail.com\",\n        \"password\": \"c33367701511b4f6020ec61ded352059\",\n        \"alamat\": \"Jakarta\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Hasan\",\n        \"email\": \"hasan@gmail.com\",\n        \"password\": \"d553d148479a268914cecb77b2b88e6a\",\n        \"alamat\": \"Bekasi\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Rudi\",\n        \"email\": \"rudi@gmail.com\",\n        \"password\": \"d553d148479a268914cecb77b2b88e6a\",\n        \"alamat\": \"Depok\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Toni Ja\",\n        \"email\": \"tonija@gmail.com\",\n        \"password\": \"d0970714757783e6cf17b26fb8e2298f\",\n        \"alamat\": \"Bangkok Thailand\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Rudi Hadi Soewarno\",\n        \"email\": \"rudihadisoewarno@gmail.com\",\n        \"password\": \"71f55003c9a36b40c4a094908f11fb77\",\n        \"alamat\": \"Jakarta\"\n    }\n]"
+				},
+				{
+					"name": "viewByName",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user?name=toni",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "toni"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "241"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f1-e4sTt3awfiMlDDRLVLUpTYb7OXQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Aug 2022 04:48:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Toni\",\n        \"email\": \"toni@gmail.com\",\n        \"password\": \"e10adc3949ba59abbe56e057f20f883e\",\n        \"alamat\": \"Ciputat\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Toni Ja\",\n        \"email\": \"tonija@gmail.com\",\n        \"password\": \"d0970714757783e6cf17b26fb8e2298f\",\n        \"alamat\": \"Bangkok Thailand\"\n    }\n]"
+				},
+				{
+					"name": "viewByName+Email",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user?name=toni&email=tonija@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "toni"
+								},
+								{
+									"key": "email",
+									"value": "tonija@gmail.com"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "128"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"80-lNQKmxiZLVubkIKOmgdota/zwCA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Aug 2022 04:49:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Toni Ja\",\n        \"email\": \"tonija@gmail.com\",\n        \"password\": \"d0970714757783e6cf17b26fb8e2298f\",\n        \"alamat\": \"Bangkok Thailand\"\n    }\n]"
+				},
+				{
+					"name": "viewUserById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "116"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"74-jfJHx9GJd3bRA/SSesrsYZT+G/U\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Aug 2022 04:51:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"Sugeng\",\n    \"email\": \"sugeng@gmail.com\",\n    \"password\": \"c33367701511b4f6020ec61ded352059\",\n    \"alamat\": \"Jakarta\"\n}"
+				},
+				{
+					"name": "DataNotFound",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user/7",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"7"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "14"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e-AxsBcwCPe7dh48FXpnOJzwbUTe0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Aug 2022 04:53:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "DATA NOT FOUND"
+				}
+			]
+		}
+	]
+}
