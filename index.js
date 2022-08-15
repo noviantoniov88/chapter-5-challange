@@ -30,18 +30,26 @@ app.get('/login', (req, res)=>{
 
 app.get('/user', (req,res)=>{
     let query = JSON.stringify(req.query) ;
+    let data = JSON.parse(fs.readFileSync('./userAccount.json', 'utf-8'));
     // console.log(queryName);
     if (query === '{}'){
-        let data = JSON.parse(fs.readFileSync('./userAccount.json', 'utf-8'));
         res.send(data);
     }else{
-        let queryName = req.query.name;
-        let queryemail = req.query.email;
+        let queryName = (req.query.name || "").toLowerCase();
+        let queryEmail = (req.query.email || "").toLowerCase();
+        let filteredData = []
 
-        let data = JSON.parse(fs.readFileSync('./userAccount.json', 'utf-8'));
+        for(let i=0; i < data.length; i++){
+            if(data[i].name.toLowerCase().includes(queryName) && data[i].email.toLowerCase().includes(queryEmail)){
+                filteredData.push(data[i]);
+            }
         // console.log(queryName)
-        res.send(data);
-        // res.status(404).send('DATA NOT FOUND');
+        }
+        if(filteredData.length != 0){
+            res.send(filteredData);
+        }else{
+            res.status(404).send("DATA NOT FOUND");
+        }
     }
 });
 

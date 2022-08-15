@@ -26,5 +26,19 @@
         "email":"rudi@gmail.com",
         "password":"321654",
         "alamat":"Depok"
+    },
+    {
+        "id":5,
+        "name":"Toni Ja",
+        "email":"tonija@gmail.com",
+        "password":"112233",
+        "alamat":"Bangkok Thailand"
+    },
+    {
+        "id":4,
+        "name":"Rudi Hadi Soewarno",
+        "email":"rudihadisoewarno@gmail.com",
+        "password":"332211",
+        "alamat":"Jakarta"
     }
 ]
