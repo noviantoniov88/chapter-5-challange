@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "name":"Toni",
+        "email":"toni@gmail.com",
+        "password":"123456",
+        "alamat":"Ciputat"
+    },
+    {
+        "id":2,
+        "name":"Sugeng",
+        "email":"sugeng@gmail.com",
+        "password":"654321",
+        "alamat":"Jakarta"
+    },
+    {
+        "id":3,
+        "name":"Hasan",
+        "email":"hasan@gmail.com",
+        "password":"321654",
+        "alamat":"Bekasi"
+    },
+    {
+        "id":4,
+        "name":"Rudi",
+        "email":"rudi@gmail.com",
+        "password":"321654",
+        "alamat":"Depok"
+    }
+]

@@ -1,0 +1,84 @@
+body{
+    background-color:peru;
+
+}
+
+.link-back{
+    cursor: pointer;
+}
+
+.play-state-selected{
+    background-color:silver;
+    border-radius: 10px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.start-state{
+    border-radius: 10px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.start-state-selected{
+    background-color:silver;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.start-state:hover{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 29px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.versus-state-start{
+    font-size: 500%;
+    font-weight: bold;
+    color: red;
+}
+
+.versus-state-playwin{
+    /* position:sticky; */
+    font-size: 250%;
+    background-color: seagreen;
+    color:white;
+    border-radius: 10px;
+    transform:rotate(-30deg);
+}
+
+.versus-state-comwin{
+    transform:scale(3);
+    font-size: 250%;
+    background-color: seagreen;
+    color:white;
+    border-radius: 10px;
+    transform:rotate(-30deg);
+}
+
+.versus-state-draw{
+    transform:scale(3);
+    font-size: 250%;
+    background-color: green;
+    color:white;
+    border-radius: 10px;
+    transform:rotate(-30deg);
+}
+
+.refresh{
+    border-radius: 10px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.refresh:hover{
+    border:1px solid grey;
+    border-radius: 10px;
+    padding: 29px;
+    cursor: pointer;
+    opacity: 0.8;
+}
