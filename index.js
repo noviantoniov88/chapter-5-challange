@@ -10,7 +10,6 @@ app.use('/assets', express.static(__dirname+'/assets'))
 
 
 app.get('/', (req, res)=>{
-    // res.send("<h1>Halaman Landing Page</h1>");
     res.sendFile(path.join(__dirname + '/views/landingPage.html'))
 });
 
@@ -19,7 +18,6 @@ app.get('/home', (req, res)=>{
 });
 
 app.get('/mainGame', (req, res)=>{
-    // res.send("<h1>Halaman Main Game</h1>");
     res.sendFile(path.join(__dirname + '/views/mainGame.html'))
 });
 
@@ -30,7 +28,6 @@ app.get('/login', (req, res)=>{
 app.get('/user', (req,res)=>{
     let query = JSON.stringify(req.query) ;
     let data = JSON.parse(fs.readFileSync('./userAccount.json', 'utf-8'));
-    // console.log(queryName);
     if (query === '{}'){
         res.send(data);
     }else{
@@ -42,7 +39,6 @@ app.get('/user', (req,res)=>{
             if(data[i].name.toLowerCase().includes(queryName) && data[i].email.toLowerCase().includes(queryEmail)){
                 filteredData.push(data[i]);
             }
-        // console.log(queryName)
         }
         if(filteredData.length != 0){
             res.send(filteredData);
@@ -55,7 +51,6 @@ app.get('/user', (req,res)=>{
 app.get('/user/:id', function (req,res){
     let result 
     let data = JSON.parse(fs.readFileSync('./userAccount.json', 'utf-8'));
-    // console.log(queryName);
 
     for(let i=0; i < data.length; i++){
         if(data[i].id == parseInt(req.params.id)){
@@ -69,7 +64,6 @@ app.get('/user/:id', function (req,res){
     }
 });
 
-// app.listen(3000);
 app.listen(3000, ()=>{
     console.log("Application is running at localhost:3000");
 });

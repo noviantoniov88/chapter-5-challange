@@ -3,42 +3,42 @@
         "id":1,
         "name":"Toni",
         "email":"toni@gmail.com",
-        "password":"123456",
+        "password":"e10adc3949ba59abbe56e057f20f883e",
         "alamat":"Ciputat"
     },
     {
         "id":2,
         "name":"Sugeng",
         "email":"sugeng@gmail.com",
-        "password":"654321",
+        "password":"c33367701511b4f6020ec61ded352059",
         "alamat":"Jakarta"
     },
     {
         "id":3,
         "name":"Hasan",
         "email":"hasan@gmail.com",
-        "password":"321654",
+        "password":"d553d148479a268914cecb77b2b88e6a",
         "alamat":"Bekasi"
     },
     {
         "id":4,
         "name":"Rudi",
         "email":"rudi@gmail.com",
-        "password":"321654",
+        "password":"d553d148479a268914cecb77b2b88e6a",
         "alamat":"Depok"
     },
     {
         "id":5,
         "name":"Toni Ja",
         "email":"tonija@gmail.com",
-        "password":"112233",
+        "password":"d0970714757783e6cf17b26fb8e2298f",
         "alamat":"Bangkok Thailand"
     },
     {
         "id":4,
         "name":"Rudi Hadi Soewarno",
         "email":"rudihadisoewarno@gmail.com",
-        "password":"332211",
+        "password":"71f55003c9a36b40c4a094908f11fb77",
         "alamat":"Jakarta"
     }
 ]
